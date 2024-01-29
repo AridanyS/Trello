@@ -17,8 +17,15 @@ export function SortableItem(props) {
   };
   
   return (
+    <>
     <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
       {"Añada otra"}
     </div>
+    
+    
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+    {"dos"}
+  </div>
+  </>
   );
 }
