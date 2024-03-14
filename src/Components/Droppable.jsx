@@ -6,14 +6,13 @@ export function Droppable(props) {
     id: 'droppable',
   });
   const style = {
-    color: isOver ? 'lightblue' : 'green',
+    color: isOver ? 'green' : undefined,
   };
   
   
   return (
     <div ref={setNodeRef} style={style}>
       {props.children}
-      Salchicha
     </div>
   );
 }
